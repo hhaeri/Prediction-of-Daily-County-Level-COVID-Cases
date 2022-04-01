@@ -1,0 +1,9 @@
+pandas
+plotly
+altair
+requests
+streamlit
+python-dotenv
+numpy
+geopandas
+matplotlib
