@@ -94,7 +94,11 @@ The final hyperparameters selected for my model is a combination of (5,1,0),that
 
 # 4. Model Results Visualization
 
-For this project I created a heroku app that provides the user with an interactive Alter chart that plots the actual case count versus the model predicted count for the user's desired county picked from the drop down menu at the bottom of the chart. The user can look at the true daily case count versus the predicted value at anytime starting from the very first covid case that apeared in California till now or zoom in to specific time periods to get a closer look. The following chart shows an snapshot of the interactive plot explained here for the Contra Costa county.
+For this project I created a heroku app that provides the user with an interactive Alter chart that plots the actual case count versus the model predicted count for the user's desired county picked from the drop down menu at the bottom of the chart. Here you can explore the app:
+
+https://ca-covid-schoolage-hhaeri.herokuapp.com/
+
+The user can look at the true daily case count versus the predicted value at anytime starting from the very first covid case that apeared in California till now or zoom in to specific time periods to get a closer look. The following chart shows an snapshot of the interactive plot explained here for the Contra Costa county.
 
 ![image](https://user-images.githubusercontent.com/91407046/161214467-1ae34b18-709e-48f3-88cc-b28a2e83ed9a.png)
 
@@ -107,8 +111,8 @@ Another visual that is provided to the user through my Heroku app is the map of 
 ![image](https://user-images.githubusercontent.com/91407046/161219208-07182207-f22b-47c1-bbb1-aeff751a5c40.png)
 
 # 5. The app
-This repository also contains files that I used to create an app  for the project:
+This repository also contains files that I used to create the app  for this project:
 
 https://ca-covid-schoolage-hhaeri.herokuapp.com/
 
-The app is created in streamlit and deployed to heroku. It plots true and predicted values of daily confirmed COVID cases for the user_selected county in state of California for the school age population. The prediction was performed through timeseries forecasting using ARIMA as explained in **Section 3**.
+The app is created in streamlit and deployed to heroku. It plots true and predicted values of daily confirmed COVID cases for the user_selected county in state of California for the school age population as explained in **Section 4**. The prediction was performed through timeseries forecasting using ARIMA as explained in **Section 3**.
