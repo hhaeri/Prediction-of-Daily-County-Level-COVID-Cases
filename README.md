@@ -6,6 +6,8 @@
 Using the COVID-19 case-count data of all the counties in California, I built a classical machine learning model to predict the daily county-level case-count in school age population in California. This project uses timeseries forecasting through Auto Regressive Integrated Moving Average (ARIMA) model to provide prediction ten days in advance. The result of this model have the potential to provide insights on better preparedness for COVID-19 school resource allocation as State and School officials can use the models’ predicted case-counts to allocate the COVID-19 preventation resources more efficiently by sending them where they are most needed. The model results also can be used to determine the timing of implementation and relief of social distancing policies and safety regulations at individual counties and school districts.
 ### 2. Data Extraction/Munging and Feature Engineering
 
+#### 2.1 Data Selection and Extraction
+
 #### COVID-19 Case Surveillance Restricted Access Detailed Data
 The COVID-19 case surveillance system database includes patient-level data reported to U.S. states and autonomous reporting entities, including New York City and the District of Columbia (D.C.), as well as U.S. territories and states. These data include demographic characteristics, exposure history, disease severity indicators and outcomes, clinical data, laboratory diagnostic test results, and comorbidities. The restricted access data set includes the following variables: 
 
@@ -53,6 +55,9 @@ After the desired data is collected from the original dataset, the cases were ag
 
 Annual Estimates of the Resident Population for Counties is availabe through the Cencus Bureau Dataset. The most recent estimate of the county-level detailed population data was fetched from the Cencus Bureau website and used in this project.  
 
+#### 2.2 Data Munging and Feature Engineering
+
+
 ### 3. Timeseries forecasting through ARIMA
 
 Using the COVID-19 case-count data of all the counties in California, I built a classical machine learning model to predict the spread of COVID-19 throughout the California counties. This project uses timeseries forecasting through Auto Regressive Integrated Moving Average (ARIMA) model to predict the spread of COVID-19 throughout the California counties ten days in advance. The result of this small-scale model have the potential to provide insights on better preparedness for COVID-19 as State and School officials can use the models’ predicted case-counts to allocate the COVID-19 preventation resources more efficiently by sending them where they are most needed. The model results also can be used to determine the timing of implementation and relief of social distancing policies and safety regulations at individual counties.
@@ -76,3 +81,4 @@ An ARIMA model has three hyperparameters to tune:
 
 The final hyperparameters selected for my model is a combination of (5,1,0),that is the lag order 5, the degree of differencing 1, and the moving average window size 0. these hyperparameters were fine tuned through trial-and-error for all counties. The combination with the best results was selected and these hyperparameters were used for the models. 
 
+# 4. Model Results Visualization
