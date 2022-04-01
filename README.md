@@ -1,4 +1,6 @@
-# TDI_Capstone
+# The Data Incubator Capstone Project
+# Prediction of Daily County Level COVID Cases in School Age Population using Machine Learning
+## Hanieh Haeri
 ### 1. Project Motivation
 
 Using the COVID-19 case-count data of all the counties in California, I built a classical machine learning model to predict the daily county-level case-count in school age population in California. This project uses timeseries forecasting through Auto Regressive Integrated Moving Average (ARIMA) model to provide prediction ten days in advance. The result of this model have the potential to provide insights on better preparedness for COVID-19 school resource allocation as State and School officials can use the models’ predicted case-counts to allocate the COVID-19 preventation resources more efficiently by sending them where they are most needed. The model results also can be used to determine the timing of implementation and relief of social distancing policies and safety regulations at individual counties and school districts.
