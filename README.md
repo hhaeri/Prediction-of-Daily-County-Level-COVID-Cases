@@ -9,30 +9,13 @@ Using the COVID-19 case-count data of all the counties in California, I built a 
 #### 2.1 Data Selection and Extraction
 
 #### COVID-19 Case Surveillance Restricted Access Detailed Data
-The COVID-19 case surveillance system database includes patient-level data reported to U.S. states and autonomous reporting entities, including New York City and the District of Columbia (D.C.), as well as U.S. territories and states. These data include demographic characteristics, exposure history, disease severity indicators and outcomes, clinical data, laboratory diagnostic test results, and comorbidities. The restricted access data set includes the following variables: 
+The COVID-19 case surveillance system database includes patient-level data reported to U.S. states and autonomous reporting entities, including New York City and the District of Columbia (D.C.), as well as U.S. territories and states. These data include demographic characteristics, exposure history, disease severity indicators and outcomes, clinical data, laboratory diagnostic test results, and comorbidities. The restricted access data set includes 32 features, however only limited number of the features were essential to this project. The selected features used for my project are listed here: 
 
 - **The earlier of the Clinical Date**:Cdc_case_earliest_dt uses the best available date from both cdc_received_dt and cdc_clinical_obs_dt and is an option to end-users who need a date variable with optimized completeness. The logic of cdc_case_earliest_dt is to use the non-null date of one variable when the other is null and to use the earliest valid date when both dates are available.
-
-- Initial report date of case to CDC (Deprecated, use the earlier of the Clinical Date): This date was populated using the date at which a case record was first submitted to the database. If missing, then the report date entered on the case report form was used. If missing, then the date at which the case first appeared in the database was used.
-- Date of first positive specimen collection
-- Symptom onset date, if symptomatic
 - **Case status**
-- Sex
 - **Age group** (0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80+ years)
-- Race and ethnicity (combined)
 - **State of residence**
 - **County of residence**
-- County FIPS code
-- Healthcare worker status
-- Pneumonia present
-- Acute respiratory distress syndrome (ARDS) present
-- Abnormal chest x-ray (CXR) present
-- Hospitalization status
-- ICU admission status
-- Mechanical ventilation (MV)/intubation status
-- Death status
-- Presence of each of the following symptoms: fever, subjective fever, chills, myalgia, rhinorrhea, sore throat, cough, shortness of breath, nausea/vomiting, headache, abdominal pain, diarrhea
-- Presence of underlying comorbidity or disease
 
 This is a **private** dataset with **restricted** access. CDC granted me the access to the GitHub repository after a request was sent to CDC. 
 
