@@ -65,11 +65,12 @@ It should be noted that due to the nature of COVID, unless the train period cont
 
 Hyperparameter tuning is an essential aspect of the training process of any machine learning model. A hyperparameter is any parameter typically in the form of a variable whose value is used in machine learning to influence the learning process. 
 
-
 An ARIMA model has three hyperparameters to tune: 
 * **p**: autoregressive lag order: number of previous values to be used
 * **d**: degree of differencing: number of non-seasonal differences needed for stationarity
 * **q**: moving average window size: number of data points used to compute a weighted average
-![image.png](attachment:image.png)
+
+![image](https://user-images.githubusercontent.com/91407046/161170708-45ac26d3-4d9e-44ee-a852-e0f1ae6b36fe.png)
+
 The final hyperparameters selected for my model is a combination of (5,1,0),that is the lag order 5, the degree of differencing 1, and the moving average window size 0. these hyperparameters were fine tuned through trial-and-error for all counties. The combination with the best results was selected and these hyperparameters were used for the models. 
 
