@@ -104,5 +104,6 @@ The user also can zoom in to the more recent times and see the forecasted case c
 
 Another visual that is provided to the user through my Heroku app is the map of Califonia counties color coded with their average 10-days case count forecast for the school age population. The map is labled to show the counties with top 10 average forecast value. This visual can provide quick insight to State and school officials on better allocation of COVID-19 prevetation school resources. 
 
-![image](https://user-images.githubusercontent.com/91407046/161217618-e3d1fd68-384d-4c79-bd19-592fd2acf2d1.png)
+![image](https://user-images.githubusercontent.com/91407046/161219208-07182207-f22b-47c1-bbb1-aeff751a5c40.png)
+
 
