@@ -62,7 +62,9 @@ Timeseries modeling requires the data to have consistant time intervals, such th
 ![image](https://user-images.githubusercontent.com/91407046/161200807-03ea54bc-6fa1-4c80-a303-997b6995514e.png)
 
 At a glance we can see which counties appear to be completely populated as opposed to the ones rarely populated (mostly black versus mostly white bars). With a close look at the missing values matrix we can identify the counties with sparse case count reported to CDC. The following table lists the counties with more than 40% missing case counts.
+
 ![image](https://user-images.githubusercontent.com/91407046/161211978-653420b8-f03c-411a-8257-7cf305023945.png)
+
 It is very important that understand that the model is not going to be reliable for these counties as the data is sparse and the ARIMA model is not going to be able to predict the timeseries patern and will perform a lousy fit, not because of any problem with the model but the lack of data.
 
 ### 3. Timeseries forecasting through ARIMA
