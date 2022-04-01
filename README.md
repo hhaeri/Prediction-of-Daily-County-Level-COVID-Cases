@@ -94,4 +94,10 @@ The final hyperparameters selected for my model is a combination of (5,1,0),that
 
 # 4. Model Results Visualization
 
+For this project I created a heroku app that provides the user with an interactive Alter chart that plots the actual case count versus the model predicted count for the user's desired county picked from the drop down menu at the bottom of the chart and look at the true daily case count versus the predicted value at anytime starting from the very first covid case that apeared in California till now. The following chart shows an snapshot of the interactive plot explained here for the Contra Costa county.
 ![image](https://user-images.githubusercontent.com/91407046/161214467-1ae34b18-709e-48f3-88cc-b28a2e83ed9a.png)
+
+The user also can zoom in to the more recent times and see the forecasted case counts for its desired county 10 days in to future. 
+
+![image](https://user-images.githubusercontent.com/91407046/161214807-5d987810-d3f7-4d56-a6a5-f8308cda1554.png)
+
