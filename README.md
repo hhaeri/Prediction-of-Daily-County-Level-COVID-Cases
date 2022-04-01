@@ -93,3 +93,5 @@ An ARIMA model has three hyperparameters to tune:
 The final hyperparameters selected for my model is a combination of (5,1,0),that is the lag order 5, the degree of differencing 1, and the moving average window size 0. these hyperparameters were fine tuned through trial-and-error for all counties. The combination with the best results was selected and these hyperparameters were used for the models. 
 
 # 4. Model Results Visualization
+
+![image](https://user-images.githubusercontent.com/91407046/161214467-1ae34b18-709e-48f3-88cc-b28a2e83ed9a.png)
