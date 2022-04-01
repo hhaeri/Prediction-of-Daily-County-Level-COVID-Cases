@@ -9,7 +9,7 @@ Using the COVID-19 case-count data of all the counties in California, I built a 
 #### 2.1 Data Selection and Extraction
 
 #### COVID-19 Case Surveillance Restricted Access Detailed Data
-The COVID-19 case surveillance system database includes patient-level data reported to U.S. states and autonomous reporting entities, including New York City and the District of Columbia (D.C.), as well as U.S. territories and states. These data include demographic characteristics, exposure history, disease severity indicators and outcomes, clinical data, laboratory diagnostic test results, and comorbidities. The restricted access data set includes 32 features, however only limited number of the features were essential to this project. The selected features used for my project are listed here: 
+The COVID-19 case surveillance system database includes patient-level data reported to U.S. states and autonomous reporting entities, including New York City and the District of Columbia (D.C.), as well as U.S. territories and states. These data include demographic characteristics, exposure history, disease severity indicators and outcomes, clinical data, laboratory diagnostic test results, and comorbidities. The restricted access data set includes 32 features, however only limited number of the features were essential to this project. In this project I only use the following attributes of the dataset: 
 
 - **The earlier of the Clinical Date**:Cdc_case_earliest_dt uses the best available date from both cdc_received_dt and cdc_clinical_obs_dt and is an option to end-users who need a date variable with optimized completeness. The logic of cdc_case_earliest_dt is to use the non-null date of one variable when the other is null and to use the earliest valid date when both dates are available.
 - **Case status**
@@ -20,12 +20,6 @@ The COVID-19 case surveillance system database includes patient-level data repor
 This is a **private** dataset with **restricted** access. CDC granted me the access to the GitHub repository after a request was sent to CDC. 
 
 This data set updates the **first Tuesday of every month**. Since February 2021, the data was available in both CSV and **Parquet** format, both Parquet and CSV files are identical. I experienced faster data extraction using the Parquet format,hence the Parquet format is used in my project. Note, that at the earlier folders I notice that the Parquet files are in zipped format, so in future we need to make sure unzip them if they come in zipped format.
-
-In this project I only use the following attributes of the dataset: 
-* Date (The earlier of the Clinical Date), 
-* Case Status, 
-* Age group, 
-* State and County of Residence
 
 For the herein project, the following filters were performed: 
 * The data was filtered to only include the confirmed cases (Selected Case Status = Laboratory-confirmed case)
