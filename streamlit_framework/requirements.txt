@@ -1,0 +1,10 @@
+pandas
+plotly
+altair
+bokeh==2.4.1
+requests
+streamlit
+python-dotenv
+yfinance
+numpy
+geopandas
