@@ -57,6 +57,8 @@ Annual Estimates of the Resident Population for Counties is availabe through the
 
 #### 2.2 Data Munging and Feature Engineering
 
+Timeseries modeling requires the data to have consistant time intervals, such that if the model is given daily timeseries it can not have missing periods in it. In fact ARIMA has no understanding of the actual dates associated with each data, but instead it only given a data series. Clearly speaking, if data is missing for Tuesday and the model is given daily data, the Wednesday data is read as the missing data of Tuesday and so on. Let's take a look at the missing case count data for the California counties. To this aim, I use Missingno library in python that is a very helpful tool for visualizing incompleteness in a dataset, it works on top of Matplotlib and Seaborn and is effortless to use. The following plot visualize the missing school age case counts for each California county (white: missing data).
+
 ![image](https://user-images.githubusercontent.com/91407046/161200807-03ea54bc-6fa1-4c80-a303-997b6995514e.png)
 
 At a glance we can see which counties appear to be completely populated as opposed to the ones rarely populated (mostly black versus mostly white bars). With a close look at the missing values matrix we can identify the counties with sparse case count reported to CDC. 
