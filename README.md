@@ -57,6 +57,9 @@ Annual Estimates of the Resident Population for Counties is availabe through the
 
 #### 2.2 Data Munging and Feature Engineering
 
+![image](https://user-images.githubusercontent.com/91407046/161200807-03ea54bc-6fa1-4c80-a303-997b6995514e.png)
+
+At a glance we can see which counties appear to be completely populated as opposed to the ones rarely populated (mostly black versus mostly white bars). With a close look at the missing values matrix we can identify the counties with sparse case count reported to CDC. 
 
 ### 3. Timeseries forecasting through ARIMA
 
