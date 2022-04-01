@@ -106,4 +106,9 @@ Another visual that is provided to the user through my Heroku app is the map of 
 
 ![image](https://user-images.githubusercontent.com/91407046/161219208-07182207-f22b-47c1-bbb1-aeff751a5c40.png)
 
+# 5. The app
+This repository also contains files that I used to create an app  for the project:
 
+https://ca-covid-schoolage-hhaeri.herokuapp.com/
+
+The app is created in streamlit and deployed to heroku. It plots true and predicted values of daily confirmed COVID cases for the user_selected county in state of California for the school age population. The prediction was performed through timeseries forecasting using ARIMA as explained in **Section 3**.
