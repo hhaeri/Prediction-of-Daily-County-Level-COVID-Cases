@@ -1,4 +1,3 @@
-# The Data Incubator Capstone Project
 # Prediction of Daily County Level COVID Cases in School Age Population using Machine Learning
 ## Hanieh Haeri
 ### 1. Project Motivation
